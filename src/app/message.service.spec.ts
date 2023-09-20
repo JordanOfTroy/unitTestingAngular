@@ -20,6 +20,8 @@ describe('MessageService', () => {
     it('should remove all messages when clear is called', () => {
         //arrange
         service.add('message1');
+        service.add('message2');
+        service.add('yeet dat ho!');
         
         //act
         service.clear()
